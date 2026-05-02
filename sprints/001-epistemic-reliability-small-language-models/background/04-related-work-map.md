@@ -4,6 +4,8 @@ This note maps the areas to study. It is a guide for reading and reference colle
 
 Do not try to read everything before experimenting. Use this map to identify what is relevant to the next hypothesis.
 
+For concrete paper links and short takeaways, see `05-paper-reading-list.md`.
+
 ## 1. LLM Calibration
 
 Core question:
@@ -307,4 +309,3 @@ For each paper, post, or reference:
 - What it misses:
 - Relevance to this sprint:
 - Follow-up idea:
-
