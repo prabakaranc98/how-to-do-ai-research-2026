@@ -1,9 +1,9 @@
 # North Star: Frontier AI Research Operating Map
 
-**Last updated:** April 24, 2026  
+**Last updated:** May 2, 2026  
 **Author:** Pra Cha (prabakaranc98 / pracha.me)
 
-This document translates the research policy into a concrete external map: what frontier AI companies are hiring for, what technical problems they are trying to solve, and what this repo should build to create credible evidence of frontier research and engineering ability.
+This is the strategic map for the public living lab described in `README.md`. It translates the research policy in `policy.md` into a concrete external map: what frontier AI companies are hiring for, what technical problems they are trying to solve, and what this repo should build to create credible evidence of frontier research and engineering ability.
 
 The goal is not to imitate company roadmaps. The goal is to identify the recurring problem surfaces across frontier labs, open model labs, applied AI companies, and evidence-heavy data science teams, then attack those problems through public, reproducible experiments.
 

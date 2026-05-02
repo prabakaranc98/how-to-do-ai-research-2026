@@ -1,7 +1,9 @@
 # Research & Engineering Policy
 
-**Last updated:** April 24, 2026  
+**Last updated:** May 2, 2026  
 **Author:** Pra Cha (prabakaranc98 / pracha.me)
+
+This is the philosophy and operating policy for the public living lab described in `README.md`. The companion `northstar.md` translates this policy into company signals, problem spaces, skill stacks, and candidate research programs.
 
 ## 1. Philosophy
 I pursue intelligence as an emergent technical *and* existential phenomenon.  
@@ -74,7 +76,7 @@ Progress is measured by depth of implementation and emergence of insight, not by
 ---
 
 This repo is my public laboratory.  
-It is a living record of how I think, experiment,research, and ship at the frontier.
+It is a living record of how I think, experiment, research, and ship at the frontier.
 
 Welcome. Feel free to explore, critique, or collaborate.
 
