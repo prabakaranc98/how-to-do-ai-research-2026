@@ -98,6 +98,82 @@ Key notes to keep:
 - [Simon Peyton Jones, "How to write a great research paper"](https://www.microsoft.com/en-us/research/academic-program/write-great-research-paper/): writing is part of thinking; a paper needs one clear idea, a strong story, and explicit contributions.
 - [John Schulman, "An Opinionated Guide to ML Research"](http://joschu.net/blog/opinionated-guide-ml-research.html): develop research taste, choose problems with headroom, keep experiment notes, and make continual progress.
 
+### Crisp Takeaways From The References
+
+**Neel Nanda**
+
+- Learn just enough to begin; do not hide in endless preparation.
+- Use short projects to build the fast skills: coding, debugging, inspecting outputs, and getting unstuck.
+- Treat early projects as skill practice, not as proof of identity.
+- Work in 1-2 week sprints once the basics are in place.
+- Postmortem every sprint: continue only if the evidence and momentum are strong.
+- Research has phases: ideation, exploration, understanding, distillation.
+- Good science beats flashy science: baselines, limitations, honest writeups, and no cherry-picking.
+
+**Richard Hamming**
+
+- Important work starts with important problems.
+- Importance alone is not enough; there must be a plausible attack.
+- Keep asking what the important problems in the field are.
+- Courage matters: serious work often begins before the path is obvious.
+- Luck favors prepared minds, so prepare continuously.
+- Presentation and communication are part of doing important work.
+
+**Michael Nielsen**
+
+- Research effectiveness is built through habits, not occasional inspiration.
+- Take responsibility for your own research environment and output.
+- Build a clear vision, but revise it as evidence accumulates.
+- Develop unique combinations of ability; intersections create advantage.
+- Read deeply where it matters instead of skimming everything forever.
+- Balance contribution with self-development.
+
+**Andrej Karpathy**
+
+- Research is mostly an outer-loop problem: choosing what is worth solving.
+- Develop taste by asking what a result would unlock if it worked.
+- Aim higher than small incremental improvements when possible.
+- A good research direction is fertile: it can produce a lineage of work.
+- The best projects are ambitious but still attackable.
+- Ownership matters: become "the person who did X."
+
+**Jason Wei**
+
+- AI research is a learnable skill, like music or sport.
+- The core skills are idea selection, experiment design/execution, writing, and impact.
+- Idea selection is a multiplier; weak topics cap the upside.
+- Prefer simple, general, durable ideas over complicated, narrow, short-lived ones.
+- Speed matters, but not at the cost of rigor.
+- Writing and framing can massively change how work is received.
+- Maximize impact through clear communication, open artifacts, talks, posts, and follow-up work.
+
+**Richard Feynman**
+
+- Do not fool yourself; you are the easiest person to fool.
+- Report what could invalidate the result, not only what supports it.
+- Scientific integrity requires bending over backwards to expose weaknesses.
+- Publish negative or inconvenient results when they matter.
+- Avoid cargo-cult research: copying the form of science without the substance.
+
+**Simon Peyton Jones**
+
+- Do not wait to write; writing clarifies thinking.
+- A paper should have one clear main idea.
+- Tell a story: problem, idea, evidence, contribution.
+- State contributions explicitly and early.
+- Put the reader first; clarity is not optional.
+- Use feedback as signal about what the writing failed to explain.
+
+**John Schulman**
+
+- Research taste is more important than raw technical speed.
+- Choose problems with headroom, not merely easy next steps.
+- Keep daily experiment notes and review them regularly.
+- Make continual progress through habits and follow-through.
+- Avoid switching projects too often, but know when evidence says to pivot.
+- Reimplement important algorithms and papers to build real understanding.
+- Split growth between current project execution and broader self-development.
+
 The synthesis:
 
 - Pick important problems with a plausible attack.
