@@ -29,6 +29,85 @@ The work should compound across three layers:
 5. Publish the artifact: code, logs, notes, reports, model cards, eval cards, and lessons learned.
 6. Revise the map: let evidence sharpen the next question.
 
+## Research Sprint Method
+
+Research should be steered through focused experimental sprints: phase by phase, hypothesis by hypothesis, with intermediate learning at each step.
+
+1. **Pick an important area**
+   Choose an area that matters across research, academia, industry, or the real world. The area should feel personally relevant, but it should also connect to a genuine external problem surface.
+
+2. **Develop intuition before experiments**
+   Study the area well enough to understand the fundamentals, the current research directions, the practical constraints, and how the system actually behaves. Intuition is what prevents experiments from becoming random parameter changes.
+
+3. **Learn to question and form hypotheses**
+   Good research is not permutation and combination. Simply changing values, swapping models, or trying every option is not enough. The goal is to see the problem differently, identify a better logic, and form a hypothesis that explains why an approach should work.
+
+4. **Explore the intersections**
+   Once an intuition and hypothesis emerge, explore nearby intersections: methods, datasets, theory, systems, applications, and adjacent fields. This helps reveal what already exists, what is missing, and where the real opening may be.
+
+5. **Narrow the research surface**
+   Shorten the scope into a focused question. Draft experiments that can prove, disprove, or refine the hypothesis. The narrower surface should still connect to the larger problem.
+
+6. **Run research sprints**
+   Treat the work as a lineage of experiments, not a scattered marathon. Each sprint should test one hypothesis, produce one concrete artifact, and sharpen the next sprint.
+
+7. **Remove distractions**
+   Knowing what not to do is part of the craft. Avoid unnecessary complexity, ornamental tooling, weak side quests, and experiments that do not change the answer. This keeps the work less chaotic and less emotionally draining.
+
+8. **Capture intermediate learning**
+   Each phase should produce learning even if the result fails. Write down what changed, what broke, what was ruled out, and what should be tried next.
+
+The practical rhythm:
+
+- choose an important area;
+- build intuition;
+- ask sharper questions;
+- form a hypothesis;
+- scan the adjacent landscape;
+- narrow the surface;
+- run a focused sprint;
+- publish the evidence;
+- use the result to steer the next sprint.
+
+## Research Advice References
+
+This repo should stay open to advice from people who have already done serious research, while still adapting that advice to this lab's own style.
+
+### Neel Nanda: Research Sprints
+
+Neel Nanda's ["How To Become A Mechanistic Interpretability Researcher"](https://www.alignmentforum.org/posts/jP9KDyMkchuv6tHwm/how-to-become-a-mechanistic-interpretability-researcher) is a useful concrete model for learning research by doing.
+
+Key notes to keep:
+
+- Learn the minimum viable basics, then start doing research. Do not wait until you feel "done" learning.
+- Treat early work as practice for research skills, not as a final identity-defining project.
+- Use 1-5 day mini-projects to build fast feedback-loop skills: running experiments, debugging, reading outputs, and getting unstuck.
+- Move toward 1-2 week research sprints. After each sprint, write a postmortem and either continue because there is momentum or pivot because the evidence is weak.
+- Think of research as phases: ideation, exploration, understanding, and distillation.
+- Separate fast skills from slow skills. Fast skills include running and debugging experiments; slower skills include prioritization, taste, and knowing when to pivot.
+- Do good science, not flashy science: use baselines, read the data, avoid cherry-picking, show limitations, and write the work clearly.
+- Public writeups are not decoration. They are part of the research process and become proof of ability.
+
+### Other Advice To Keep Close
+
+- [Richard Hamming, "You and Your Research"](https://www.cs.virginia.edu/~robins/YouAndYourResearch.html): keep asking what the important problems are and why you are not working on them.
+- [Michael Nielsen, "Principles of Effective Research"](https://michaelnielsen.org/blog/principles-of-effective-research/): research effectiveness comes from habits, vision, proactive responsibility, environment design, and developing unique combinations of ability.
+- [Andrej Karpathy, "A Survival Guide to a PhD"](https://karpathy.github.io/2016/09/07/phd/): research is an outer-loop problem of choosing what is worth solving, not only an inner-loop problem of solving what is already given.
+- [Jason Wei, "Practicing AI research"](https://www.jasonwei.net/blog/practicing-ai-research): AI research skill can be decomposed into idea selection, experiment design/execution, writing, and maximizing impact.
+- [Richard Feynman, "Cargo Cult Science"](https://calteches.library.caltech.edu/3043/): scientific integrity means actively exposing what could make your result invalid, not only presenting what supports it.
+- [Simon Peyton Jones, "How to write a great research paper"](https://www.microsoft.com/en-us/research/academic-program/write-great-research-paper/): writing is part of thinking; a paper needs one clear idea, a strong story, and explicit contributions.
+- [John Schulman, "An Opinionated Guide to ML Research"](http://joschu.net/blog/opinionated-guide-ml-research.html): develop research taste, choose problems with headroom, keep experiment notes, and make continual progress.
+
+The synthesis:
+
+- Pick important problems with a plausible attack.
+- Learn enough to start, then learn through the work.
+- Keep feedback loops short.
+- Treat experiments as steering signals.
+- Maintain scientific honesty.
+- Write continuously.
+- Build public artifacts that show taste, rigor, and execution.
+
 ## Ways to Think, Learn, and Build
 
 - **Core Research Engineering**: systems design, math, architectures, methods, algorithms, and implementation craft.
