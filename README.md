@@ -29,6 +29,14 @@ The work should compound across three layers:
 5. Publish the artifact: code, logs, notes, reports, model cards, eval cards, and lessons learned.
 6. Revise the map: let evidence sharpen the next question.
 
+## Active Research Sprint
+
+- [`Sprint 001: Epistemic Reliability in Small Language Models`](sprints/001-epistemic-reliability-small-language-models/note-1-getting-started.md)
+
+## Shared Research Craft
+
+- [`Research Sprint Review Checklist`](research-craft/review-checklist.md): reusable technical and research-craft review for every sprint.
+
 ## Research Sprint Method
 
 Research should be steered through focused experimental sprints: phase by phase, hypothesis by hypothesis, with intermediate learning at each step.
