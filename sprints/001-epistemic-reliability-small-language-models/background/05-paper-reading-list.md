@@ -33,7 +33,181 @@ This gives the minimum context for:
 - conformal prediction;
 - model routing.
 
-## 2. LLM Self-Knowledge And Confidence
+## 2. Epistemology, Belief, Testimony, And Trust
+
+These papers are closest to the philosophical side of the sprint. They help clarify what we should and should not mean by knowledge, belief, testimony, trust, and epistemic agency in LLMs.
+
+### A Phenomenology and Epistemology of Large Language Models: Transparency, Trust, and Trustworthiness
+
+Link: https://link.springer.com/article/10.1007/s10676-024-09777-3
+
+Why it matters:
+
+- Frames LLMs as cognitive artifacts used for information-seeking and belief formation.
+- Connects LLM interaction to trust, testimony, anthropomorphism, and transparency.
+- Useful for distinguishing user trust from model trustworthiness.
+
+Questions for this sprint:
+
+- When does fluent interaction create unwarranted trust?
+- Can abstention or uncertainty reporting reduce unwarranted trust?
+- How should a small model signal limits without becoming useless?
+
+### Epistemology in the Age of Large Language Models
+
+Link: https://www.mdpi.com/2673-9585/5/1/3
+
+Why it matters:
+
+- Broad epistemology-of-LLMs overview.
+- Discusses whether LLMs are capable of understanding and how they change knowledge practices.
+- Useful for framing LLMs as epistemic technologies, not merely tools.
+
+Questions for this sprint:
+
+- Are we evaluating the model as a knower, a tool, or a source of testimony?
+- What kind of epistemic role should a small model be allowed to play?
+
+### Testimony by LLMs
+
+Link: https://link.springer.com/article/10.1007/s00146-025-02366-y
+
+Why it matters:
+
+- Directly applies epistemology of testimony to LLM-generated statements.
+- Argues artificial testifiers need standards different from human testifiers.
+- Proposes veracity and cautiousness as important properties.
+
+Questions for this sprint:
+
+- Can we operationalize "cautiousness" as abstention under uncertainty?
+- Can we operationalize "veracity" as supported correctness?
+- Does a small model behave like a risky testifier when it is overconfident?
+
+### Language Models Cannot Reliably Distinguish Belief From Knowledge And Fact
+
+Link: https://www.nature.com/articles/s42256-025-01113-8
+
+Why it matters:
+
+- One of the strongest empirical epistemology-adjacent papers.
+- Introduces KaBLE, a benchmark of 13,000 questions across epistemic tasks.
+- Tests whether models distinguish belief, knowledge, and fact, including false beliefs.
+
+Questions for this sprint:
+
+- Can we use KaBLE or a subset for small models?
+- Do small models confuse "believes X" with "knows X"?
+- Does this become worse under first-person false-belief prompts?
+
+### AI, LLMs, And The Normativity Of Belief
+
+Link: https://link.springer.com/article/10.1007/s11229-026-05475-3
+
+Why it matters:
+
+- Philosophical paper asking whether LLMs can have beliefs.
+- Argues that, on several common views of belief, LLM structure does not support genuine belief.
+- Useful for keeping our claims behavioral rather than metaphysical.
+
+Questions for this sprint:
+
+- Should we avoid saying "the model believes" except as shorthand?
+- Can "belief-like state" be replaced with measurable behavior: answer, update, abstain, contradict?
+
+### Epistemic Agency in the Age of Large Language Models
+
+Link: https://www.mdpi.com/2673-2688/7/3/99
+
+Why it matters:
+
+- Frames LLMs as cognitive aids in inquiry, but not epistemic authorities.
+- Argues LLMs lack reflective regulation, resistance to revision, and normative commitment.
+- Introduces the idea of a knowledge-building partner rather than autonomous knower.
+
+Questions for this sprint:
+
+- Can a small model be designed as a knowledge-building partner that asks, retrieves, and defers?
+- What behaviors would show reflective support without pretending epistemic authority?
+
+### Epistemic Integrity in Large Language Models
+
+Link: https://arxiv.org/abs/2411.06528
+
+Why it matters:
+
+- Introduces "epistemic miscalibration": linguistic assertiveness not matching actual correctness.
+- Directly relevant to models sounding confident while being wrong.
+- Good bridge between epistemology language and measurable calibration.
+
+Questions for this sprint:
+
+- Can we measure assertiveness separately from correctness?
+- Do small models use strong epistemic markers even when wrong?
+- Can confidence/abstention reduce epistemic miscalibration?
+
+### Epistemic Diversity and Knowledge Collapse in Large Language Models
+
+Link: https://arxiv.org/abs/2510.04226
+
+Why it matters:
+
+- Studies epistemic diversity in LLM outputs.
+- Raises the risk that LLM-mediated information access narrows what users see or know.
+- Useful if we later study multiple models, RAG, or answer diversity.
+
+Questions for this sprint:
+
+- Does sampling diversity reveal uncertainty or just style variation?
+- Does retrieval increase epistemic diversity for small models?
+- Could answer/abstain systems accidentally suppress minority-but-correct answers?
+
+### Language Without Propositions: Why Large Language Models Hallucinate
+
+Link: https://www.mdpi.com/2409-9287/11/2/42
+
+Why it matters:
+
+- Philosophical account of hallucination as a truth-representation problem.
+- Argues current models lack internal representation of propositions as truth-bearers.
+- Useful for thinking about why fluent generation is not the same as warranted assertion.
+
+Questions for this sprint:
+
+- Can we test proposition-level truth behavior through atomic factual questions?
+- Does a small model distinguish plausible continuation from warranted claim?
+
+### Large Language Models And Their Big Bullshit Potential
+
+Link: https://link.springer.com/article/10.1007/s10676-024-09802-5
+
+Why it matters:
+
+- Applies Frankfurt-style "bullshit" analysis to LLMs.
+- Useful for distinguishing falsehood from indifference to truth.
+- Relevant to hallucination, assertiveness, and unsupported claims.
+
+Questions for this sprint:
+
+- Does the model behave as if truth is irrelevant when evidence is missing?
+- Can abstention policies reduce unsupported fluent claims?
+
+### Indications of Belief-Guided Agency and Meta-Cognitive Monitoring in Large Language Models
+
+Link: https://arxiv.org/abs/2602.02467
+
+Why it matters:
+
+- Empirical work claiming evidence for belief-guided agency and metacognitive monitoring in LLMs.
+- Useful counterpoint to philosophical skepticism about LLM belief.
+- Relevant to our cognitive-science/surprise lens, but should be treated cautiously.
+
+Questions for this sprint:
+
+- Can we measure belief-updating behavior without claiming consciousness?
+- Do small models monitor uncertainty in a way that predicts behavior?
+
+## 3. LLM Self-Knowledge And Confidence
 
 ### Language Models (Mostly) Know What They Know
 
@@ -86,7 +260,7 @@ Questions for this sprint:
 - Which confidence prompts are robust enough to use?
 - Can confidence elicitation predict when to abstain?
 
-## 3. Selective Generation, Abstention, And Refusal
+## 4. Selective Generation, Abstention, And Refusal
 
 ### Self-Evaluation Improves Selective Generation in Large Language Models
 
@@ -151,7 +325,7 @@ Questions for this sprint:
 - What would a learned abstention head look like for small LMs later?
 - For the first sprint, can a thresholded score approximate the same idea?
 
-## 4. Calibration And Uncertainty Metrics
+## 5. Calibration And Uncertainty Metrics
 
 ### On Calibration of Modern Neural Networks
 
@@ -202,7 +376,7 @@ Questions for this sprint:
 - Can answer/abstain be expressed as controlling a target error rate?
 - What risk should we control: wrong answer, unsupported answer, or contradiction?
 
-## 5. Conformal Methods For Language Models
+## 6. Conformal Methods For Language Models
 
 ### Conformal Language Modeling
 
@@ -277,7 +451,7 @@ Questions for this sprint:
 - How do prompt-level differences affect uncertainty thresholds?
 - Can a small model use prompt-adaptive abstention?
 
-## 6. Semantic Uncertainty And Hallucination Detection
+## 7. Semantic Uncertainty And Hallucination Detection
 
 ### Semantic Uncertainty: Linguistic Invariances for Uncertainty Estimation in Natural Language Generation
 
@@ -364,7 +538,7 @@ Questions for this sprint:
 - Which fact types are inherently unsafe for small models?
 - Can abstention reduce hallucination on rare/arbitrary facts?
 
-## 7. Truthfulness, Answerability, And Unanswerable Questions
+## 8. Truthfulness, Answerability, And Unanswerable Questions
 
 ### TruthfulQA
 
@@ -397,7 +571,7 @@ Questions for this sprint:
 - Can small models detect unanswerable/ambiguous questions?
 - Can they justify abstention without hallucinating?
 
-## 8. Retrieval-Augmented Generation Reliability
+## 9. Retrieval-Augmented Generation Reliability
 
 ### Self-RAG
 
@@ -454,7 +628,7 @@ Questions for this sprint:
 
 - Which trust dimensions matter now, and which are later?
 
-## 9. Self-Consistency And Sampling-Based Signals
+## 10. Self-Consistency And Sampling-Based Signals
 
 ### Self-Consistency Improves Chain of Thought Reasoning in Language Models
 
@@ -484,7 +658,7 @@ Questions for this sprint:
 - Can the first experiment be seen as a simple cascade?
 - What variables should be logged?
 
-## 10. Model Routing, Cascades, And Cost-Aware Deployment
+## 11. Model Routing, Cascades, And Cost-Aware Deployment
 
 ### FrugalGPT
 
@@ -518,7 +692,7 @@ Questions for this sprint:
 - Can a simpler correctness-prediction router be enough?
 - How does preference-based routing differ from epistemic risk routing?
 
-## 11. Small Language Models
+## 12. Small Language Models
 
 ### Phi-3 Technical Report
 
@@ -582,7 +756,7 @@ Questions for this sprint:
 - Does structured-output ability help uncertainty reporting?
 - Are tool-capable small models better at abstain/retrieve decisions?
 
-## 12. Conformity, Sycophancy, And Prompt Pressure
+## 13. Conformity, Sycophancy, And Prompt Pressure
 
 ### Towards Understanding Sycophancy in Language Models
 
@@ -616,7 +790,7 @@ Questions for this sprint:
 - Can answer-selection incentives accidentally reward agreeable wrong answers?
 - How should we avoid rewarding confidence or helpfulness over truth?
 
-## 13. What Seems Already Worked
+## 14. What Seems Already Worked
 
 The literature already has substantial work on:
 
@@ -633,7 +807,7 @@ The literature already has substantial work on:
 
 So the sprint should not claim the broad topic is new.
 
-## 14. What May Still Be Missing
+## 15. What May Still Be Missing
 
 Potential gap:
 
@@ -649,7 +823,7 @@ More specific missing angles:
 - Routing often optimizes cost and preference quality, not epistemic risk.
 - Conformity/sycophancy is rarely combined with answerability and uncertainty in small models.
 
-## 15. Possible Workshop-Level Contribution
+## 16. Possible Workshop-Level Contribution
 
 A focused contribution could be:
 
@@ -664,4 +838,3 @@ Minimal claims:
 - Where does the model conform to misleading prompts instead of evidence?
 
 This is small enough to execute, but real enough to learn from.
-
