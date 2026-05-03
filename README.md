@@ -31,8 +31,9 @@ The work should compound across three layers:
 
 ## Research Sprints
 
-- [`Sprint 001: Epistemic Reliability in Small Language Models`](sprints/001-epistemic-reliability-small-language-models/note-1-getting-started.md)
-- [`Sprint 002: Deep Learning for Port-Hamiltonian and Compositional Systems`](sprints/002-deep-learning-port-hamiltonian-systems/note-1-getting-started.md)
+- **Active:** [`Sprint 001: Epistemic Reliability in Small Language Models`](sprints/001-epistemic-reliability-small-language-models/note-1-getting-started.md)
+- **To be started:** [`Sprint 002: Deep Learning for Port-Hamiltonian and Compositional Systems`](sprints/002-deep-learning-port-hamiltonian-systems/note-1-getting-started.md)
+- **Exploratory direction:** [`Sprint 003: Predictive Coding, Natural Intelligence, and Small Language-Model Agents`](sprints/003-predictive-coding-small-language-model-agents/note-1-getting-started.md)
 
 ## Shared Research Craft
 
