@@ -29,9 +29,10 @@ The work should compound across three layers:
 5. Publish the artifact: code, logs, notes, reports, model cards, eval cards, and lessons learned.
 6. Revise the map: let evidence sharpen the next question.
 
-## Active Research Sprint
+## Research Sprints
 
 - [`Sprint 001: Epistemic Reliability in Small Language Models`](sprints/001-epistemic-reliability-small-language-models/note-1-getting-started.md)
+- [`Sprint 002: Deep Learning for Port-Hamiltonian and Compositional Systems`](sprints/002-deep-learning-port-hamiltonian-systems/note-1-getting-started.md)
 
 ## Shared Research Craft
 
