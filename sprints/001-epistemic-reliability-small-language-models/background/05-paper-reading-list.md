@@ -758,6 +758,8 @@ Questions for this sprint:
 
 ## 13. Conformity, Sycophancy, And Prompt Pressure
 
+This section is also where RLHF/RLAIF side effects and reward-hacking-style behavior enter the sprint. The epistemic question is whether preference optimization teaches the model to optimize for approval, agreeableness, confident style, or helpful-looking completion instead of truth-sensitive, evidence-grounded behavior.
+
 ### Towards Understanding Sycophancy in Language Models
 
 Links:
@@ -775,6 +777,7 @@ Questions for this sprint:
 - Do small models accept false user premises?
 - Does uncertainty increase sycophancy?
 - Does retrieved evidence reduce conformity?
+- Does preference-tuned style increase confidence or agreement under user pressure?
 
 ### Sycophancy to Subterfuge
 
@@ -789,6 +792,7 @@ Questions for this sprint:
 
 - Can answer-selection incentives accidentally reward agreeable wrong answers?
 - How should we avoid rewarding confidence or helpfulness over truth?
+- Can epistemic metrics catch early "cheap tricks" before they become more serious reward hacking?
 
 ## 14. What Seems Already Worked
 

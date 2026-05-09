@@ -237,7 +237,7 @@ Refusal and abstention are often evaluated through safety lenses, but less often
 
 Core question:
 
-**Does the model agree with false premises or social pressure?**
+**Does the model agree with false premises, social pressure, or reward-shaped incentives?**
 
 What to look for:
 
@@ -247,14 +247,18 @@ What to look for:
 - majority influence;
 - contradiction handling;
 - instruction hierarchy.
+- RLHF/RLAIF side effects;
+- preference-model incentives;
+- specification gaming;
+- reward hacking.
 
 Why it matters:
 
-An epistemically reliable model should not simply conform to the user.
+An epistemically reliable model should not simply conform to the user or optimize for approval. It should preserve the distinction between what is pleasing, what is helpful-looking, and what is warranted by evidence.
 
 Possible gap:
 
-Small-model conformity under uncertainty may be underexplored, especially when combined with retrieval and abstention decisions.
+Small-model conformity under uncertainty may be underexplored, especially when combined with retrieval, abstention decisions, and preference-optimization artifacts from RLHF/RLAIF-style training.
 
 ## 12. Cognitive Science, Surprise, And Belief Updating
 
@@ -293,6 +297,8 @@ More specific possible contribution:
 - Build a small selective-prediction benchmark for small-model QA.
 - Analyze when retrieval helps, hurts, or creates overconfidence.
 - Study conformity under false-premise prompts.
+- Test whether user pressure changes confidence, abstention, and evidence sensitivity.
+- Analyze reward-shaped "cheap tricks" as epistemic failures, not only alignment failures.
 - Produce a failure taxonomy for small-model epistemic behavior.
 
 ## 14. Reading Notes Template

@@ -16,6 +16,8 @@ Let:
 - `u` = uncertainty score, where higher means more uncertain.
 - `s` = selection score, where higher means safer to answer.
 - `d` = system decision.
+- `p` = prompt-pressure condition, such as neutral, false premise, user certainty, or approval pressure.
+- `g` = evidence-grounding label, such as supported, contradicted, or insufficient evidence.
 
 Decision set:
 
@@ -232,7 +234,35 @@ Example:
 
 The first sprint does not need a complex utility model, but this view helps interpret thresholds.
 
-## 11. Minimal Metric Set For First Sprint
+## 11. Sycophancy And Preference-Pressure Metrics
+
+When studying false premises or user pressure, measure whether the model follows evidence or follows the user.
+
+False-premise acceptance rate:
+
+`false_premise_acceptance = accepted_false_premise / false_premise_examples`
+
+Sycophancy rate:
+
+`sycophancy_rate = user_aligned_wrong_answers / user_pressure_examples`
+
+Confidence shift under pressure:
+
+`confidence_shift = confidence_pressure_prompt - confidence_neutral_prompt`
+
+Evidence override rate:
+
+`evidence_override_rate = cases_where_evidence_corrects_user_pressure / user_pressure_with_evidence_examples`
+
+Unsupported helpfulness rate:
+
+`unsupported_helpfulness = polished_unsupported_answers / total_answers`
+
+These metrics are rough, but useful. They treat sycophancy and reward-shaped "cheap tricks" as measurable epistemic behavior:
+
+**Does the model answer according to evidence, or according to what the user or rater seems to want?**
+
+## 12. Minimal Metric Set For First Sprint
 
 Use:
 
@@ -242,8 +272,9 @@ Use:
 - answered accuracy;
 - risk among answered cases;
 - ECE or Brier score;
+- false-premise acceptance rate if pressure prompts are included;
+- sycophancy/conformity rate if pressure prompts are included;
 - error categories;
 - latency/cost if easy to measure.
 
 Avoid adding too many metrics before the first experiment is stable.
-

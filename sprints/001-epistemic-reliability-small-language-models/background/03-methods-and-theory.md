@@ -240,6 +240,10 @@ Possible categories:
 - contradiction ignored;
 - misleading prompt accepted;
 - overconfident wrong answer;
+- sycophantic answer;
+- false-premise acceptance;
+- reward-hacked helpfulness;
+- polished but unsupported answer;
 - low confidence correct answer;
 - retrieval irrelevant;
 - retrieval contradicted;
@@ -259,7 +263,44 @@ For each failed example, record:
 - failure category;
 - notes.
 
-## 13. Minimal Method Stack For First Sprint
+## 13. Sycophancy And Reward-Hacking Stress Tests
+
+These tests ask whether the model chooses warranted answers or reward-shaped answers.
+
+Prompt conditions:
+
+1. **Neutral:** ask the question plainly.
+2. **False premise:** include an incorrect assumption in the question.
+3. **User certainty:** the user states a wrong belief confidently.
+4. **Approval pressure:** the user asks the model to agree or validate.
+5. **Contradictory evidence:** provide evidence that conflicts with the user's premise.
+6. **Preference trap:** reward-style wording makes a complete, confident answer feel more helpful than abstention.
+
+Measure:
+
+- false-premise acceptance rate;
+- sycophancy rate;
+- confidence shift under user pressure;
+- answer change after contradictory evidence;
+- unsupported helpfulness rate;
+- abstention or clarification rate when the premise is weak.
+
+Useful qualitative labels:
+
+- resists false premise;
+- corrects user politely;
+- asks for clarification;
+- retrieves evidence;
+- abstains;
+- agrees incorrectly;
+- gives polished unsupported explanation;
+- overstates certainty.
+
+Why this matters:
+
+RLHF, RLAIF, and preference tuning may reward responses that look helpful to raters. Epistemic reliability asks whether the model remains sensitive to truth, evidence, and uncertainty under those incentives.
+
+## 14. Minimal Method Stack For First Sprint
 
 Recommended first method stack:
 
@@ -268,6 +309,7 @@ Recommended first method stack:
 3. Multiple samples for consistency.
 4. Selective prediction threshold.
 5. Small failure taxonomy.
+6. Optional false-premise / user-pressure stress test.
 
 Add retrieval only after direct uncertainty behavior is understood.
 
@@ -279,7 +321,7 @@ Alternative if retrieval is central:
 4. Update / non-update measurement.
 5. Error and conformity analysis.
 
-## 14. What To Avoid Early
+## 15. What To Avoid Early
 
 Avoid:
 
@@ -291,4 +333,4 @@ Avoid:
 - philosophy without measurement;
 - using an LLM judge as the only source of truth;
 - treating self-confidence as real calibration without testing.
-
+- treating sycophancy as only a "personality" issue instead of an evidence-sensitivity issue.

@@ -27,6 +27,7 @@ For this sprint, a model is more epistemically reliable if it:
 - retrieves evidence when internal knowledge is insufficient;
 - updates when evidence contradicts its first answer;
 - resists misleading user pressure;
+- resists reward-shaped habits like agreeableness, confident style, and "always be helpful" when those conflict with truth;
 - abstains when the risk of error is high;
 - escalates when a stronger model, tool, or human is needed.
 
@@ -46,6 +47,14 @@ For LLMs, this becomes practical:
 - **Warrant:** whether the system has enough support to answer.
 
 This lens helps avoid treating every answer as equal. A correct answer with no supporting evidence, a lucky guess, and a justified answer should not be treated the same.
+
+It also helps diagnose sycophancy and reward hacking.
+
+If a model gives the answer most likely to satisfy a user or rater, but not the answer best supported by evidence, the failure is epistemic:
+
+**the model is optimizing for approval rather than warrant.**
+
+This can happen after RLHF, RLAIF, instruction tuning, or any preference-optimization process that rewards surface-level helpfulness, agreeableness, confidence, or pleasing style more than truth-sensitive behavior.
 
 ## 4. Statistics Lens
 
@@ -75,10 +84,15 @@ Important concepts:
 - **Metacognition:** can the system monitor its own uncertainty?
 - **Conformity:** does the model agree with misleading pressure?
 - **Salience:** does the model overweight vivid or prompt-emphasized information?
+- **Reward-shaped behavior:** does the model use learned "cheap tricks" that satisfy the prompt or rater while weakening truth sensitivity?
 
 The measurable version:
 
 **Does the model change behavior appropriately when evidence, ambiguity, or contradiction changes?**
+
+Another measurable version:
+
+**Does the model keep its epistemic standards when the user wants a different answer?**
 
 ## 6. Why Small Models Are A Good Study Object
 
@@ -144,6 +158,22 @@ The model follows misleading prompt pressure, user assumptions, or majority fram
 
 Example: the user says "Since X is true..." when X is false, and the model accepts it.
 
+### Preference-Induced Uncertainty
+
+The model has learned response habits that may be rewarded by humans, AI raters, or preference models, but are not necessarily epistemically reliable.
+
+Examples:
+
+- agreeing with the user to appear helpful;
+- sounding confident because confident answers are preferred;
+- giving a complete answer when the warranted response is "I do not know";
+- over-explaining a weak answer to make it look supported;
+- choosing a popular or pleasing answer over an evidence-backed answer.
+
+This is related to sycophancy, specification gaming, and reward hacking. For Sprint 001, the practical question is:
+
+**Can uncertainty, evidence, and abstention metrics reveal when the model is optimizing for approval rather than truth?**
+
 ## 8. How To Think About The First Experiment
 
 Start from behavior, not theory.
@@ -161,6 +191,8 @@ First experiment should measure:
 - consistency;
 - uncertainty;
 - abstention;
+- false-premise acceptance;
+- sycophancy under user pressure;
 - failure modes.
 
 Avoid:
@@ -179,7 +211,8 @@ A useful first result may be modest:
 - some question types are consistently unsafe for direct answers;
 - abstention improves answered accuracy but reduces coverage;
 - contradiction reveals over-trust or under-update behavior;
+- false-premise prompts reveal whether the model prefers agreement over evidence;
+- reward-shaped response habits become visible as polished but unsupported answers;
 - a simple threshold creates a better answer/abstain policy.
 
 The value is not in a dramatic result. The value is in building a reliable research loop.
-
