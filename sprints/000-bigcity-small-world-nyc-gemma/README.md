@@ -1,4 +1,4 @@
-# Small Modelh, Big City
+# Small Wolrd, Big City
 
 ## Urban Spatial Intelligence, Memory, and Neural Geometry in Gemma
 
