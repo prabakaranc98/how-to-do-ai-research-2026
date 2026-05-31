@@ -11,6 +11,22 @@ The goal is not performative productivity. The goal is better research, better l
 
 ## 1. Technical Review
 
+### Marr-Level Framing
+
+- Was the behavioral-level claim explicit?
+- Was the representational-level claim explicit?
+- Was the computational or mechanistic-level claim explicit?
+- Did the sprint avoid confusing behavior with mechanism?
+- Did the sprint state how neural geometry connects to observable behavior?
+
+### Integrated Stack Fit
+
+- Did the sprint state how it connects to representation learning?
+- If the sprint uses RL or post-training, was the reward or feedback signal made explicit?
+- If the sprint studies world models, was the predictive state being represented made explicit?
+- If the sprint uses mechanistic interpretability, did it support an intervention or falsifiable mechanism?
+- If the sprint uses steering or ReFT/RepE, were behavior, representation movement, and side effects all evaluated?
+
 ### Question and Hypothesis
 
 - Was the research question clear?
@@ -26,6 +42,15 @@ The goal is not performative productivity. The goal is better research, better l
 - Were there enough ablations to understand what mattered?
 - Were the metrics appropriate for the claim?
 - Were cost, latency, data quality, or deployment constraints relevant and measured if needed?
+
+### Representation And Control
+
+- Were internal representations measured, not merely assumed?
+- Were layers, token positions, prompts, and extraction choices documented?
+- Were probes treated as measurement tools rather than causal proof?
+- Was there a causal test such as steering, activation patching, causal tracing, or ReFT/RepE intervention?
+- Did the intervention move behavior in the predicted direction?
+- Were side effects and off-target changes measured?
 
 ### Evidence
 
@@ -125,4 +150,3 @@ At the end of the sprint, decide one:
 - What should become reusable infrastructure?
 - What is the next smallest useful experiment?
 - Did this sprint improve both the research result and the researcher?
-

@@ -1,4 +1,4 @@
-# Small Wolrd, Big City
+# Small World, Big City
 
 ## Urban Spatial Intelligence, Memory, and Neural Geometry in Gemma
 
@@ -9,6 +9,8 @@
 ## 0. One-line thesis
 
 **A city is a decision environment; a New Yorker is a situated agent; a small language model can be studied as a possible world model for urban life.**
+
+**Role in the mech-interpt sprint sequence:** Sprint 000 is the internal-world-model sprint. It asks whether mechanistic interpretability can find a cognitive map through probing, representation geometry, NLA-style activation interpretation, sparse features, and causal steering.
 
 This project investigates whether small language models such as **Gemma** can form, use, and expose **spatial, temporal, affordance-aware, memory-conditioned world models** of New York City.
 
@@ -171,7 +173,7 @@ You have at least one visualization where the activation geometry is interpretab
 ### Stage 6 — Review and Decide
 
 **What you do:**
-Write `report.md` for this sprint. Use the sprint review checklist at [../../research-craft/review-checklist.md](../../research-craft/review-checklist.md). Run through both the technical review and the research-craft review. Then make one of four decisions:
+Write `report.md` for this sprint. Use the sprint review checklist at [../../../research-craft/review-checklist.md](../../../research-craft/review-checklist.md). Run through both the technical review and the research-craft review. Then make one of four decisions:
 
 - **Continue:** evidence is promising and the next experiment is clear. State the next experiment specifically.
 - **Pivot:** the direction is interesting but the current framing is weak. State what would make it stronger.

@@ -1,6 +1,6 @@
 # 05 - Benchmark Selection
 
-**Sprint:** 002 - Deep Learning for Port-Hamiltonian and Compositional Systems  
+**Sprint:** World-Models 000 - Deep Learning for Port-Hamiltonian and Compositional Systems  
 **Last updated:** May 2, 2026
 
 The benchmark should not be chosen only because it is mathematically convenient. It should also connect to what people in contemporary AI/ML, scientific machine learning, neural operators, graph simulators, and AI-for-engineering are actively studying.

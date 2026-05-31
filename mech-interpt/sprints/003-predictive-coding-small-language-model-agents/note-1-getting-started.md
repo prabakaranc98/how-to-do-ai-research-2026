@@ -4,6 +4,8 @@
 **Date:** May 3, 2026  
 **Status:** Initial direction
 
+**Role in the mech-interpt sprint sequence:** Sprint 003 is the cognitive-control and predictive-coding sprint. It asks whether a language agent can dynamically adjust its representation spaces during complex tasks by using prediction error, memory, uncertainty, and self-correction.
+
 ## 1. Starting Point
 
 This sprint is not yet a committed experiment. It is an initial research direction to keep alive while Sprint 001 remains active.

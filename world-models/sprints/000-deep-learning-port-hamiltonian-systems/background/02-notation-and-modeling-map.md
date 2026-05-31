@@ -1,6 +1,6 @@
 # 02 - Notation And Modeling Map
 
-**Sprint:** 002 - Deep Learning for Port-Hamiltonian and Compositional Systems  
+**Sprint:** World-Models 000 - Deep Learning for Port-Hamiltonian and Compositional Systems  
 **Purpose:** Make the problem measurable and compare modeling choices cleanly.
 
 ## 1. Basic Variables

@@ -4,6 +4,8 @@
 **Date:** May 2, 2026  
 **Status:** Framing note
 
+**Role in the mech-interpt sprint sequence:** Sprint 001 is the reasons-responsive epistemology sprint. It asks whether mechanistic interpretability can help explain how small models use internal representations, attention flow, circuits, and evidence signals when deciding whether to answer, retrieve, abstain, clarify, or escalate.
+
 ## 1. Starting Point
 
 This sprint begins from a simple but important question:
@@ -226,7 +228,7 @@ This sprint is:
 
 All artifacts for this sprint should stay under:
 
-`sprints/001-epistemic-reliability-small-language-models/`
+`mech-interpt/sprints/001-epistemic-reliability-small-language-models/`
 
 Planned artifacts:
 

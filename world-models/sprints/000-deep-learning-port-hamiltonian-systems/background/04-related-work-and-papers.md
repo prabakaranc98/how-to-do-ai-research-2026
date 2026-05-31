@@ -1,6 +1,6 @@
 # 04 - Related Work And Papers
 
-**Sprint:** 002 - Deep Learning for Port-Hamiltonian and Compositional Systems  
+**Sprint:** World-Models 000 - Deep Learning for Port-Hamiltonian and Compositional Systems  
 **Last updated:** May 2, 2026
 
 This file collects papers and references for the sprint.

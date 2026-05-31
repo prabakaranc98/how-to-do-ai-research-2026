@@ -1,6 +1,6 @@
 # 03 - Methods And Experiments
 
-**Sprint:** 002 - Deep Learning for Port-Hamiltonian and Compositional Systems  
+**Sprint:** World-Models 000 - Deep Learning for Port-Hamiltonian and Compositional Systems  
 **Purpose:** Convert the broad idea into an experiment ladder.
 
 ## 1. Experimental Ladder

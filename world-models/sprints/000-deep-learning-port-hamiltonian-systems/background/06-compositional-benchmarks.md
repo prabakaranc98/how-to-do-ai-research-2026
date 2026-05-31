@@ -1,6 +1,6 @@
 # 06 - Compositional And Port-Based Benchmarks
 
-**Sprint:** 002 - Deep Learning for Port-Hamiltonian and Compositional Systems  
+**Sprint:** World-Models 000 - Deep Learning for Port-Hamiltonian and Compositional Systems  
 **Last updated:** May 2, 2026
 
 This note focuses on the "lego-block" version of the sprint:

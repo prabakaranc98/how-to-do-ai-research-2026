@@ -29,15 +29,36 @@ The work should compound across three layers:
 5. Publish the artifact: code, logs, notes, reports, model cards, eval cards, and lessons learned.
 6. Revise the map: let evidence sharpen the next question.
 
-## Research Sprints
+## Research Domains
 
-- **Active:** [`Sprint 001: Epistemic Reliability in Small Language Models`](sprints/001-epistemic-reliability-small-language-models/note-1-getting-started.md)
-- **To be started:** [`Sprint 002: Deep Learning for Port-Hamiltonian and Compositional Systems`](sprints/002-deep-learning-port-hamiltonian-systems/note-1-getting-started.md)
-- **Exploratory direction:** [`Sprint 003: Predictive Coding, Natural Intelligence, and Small Language-Model Agents`](sprints/003-predictive-coding-small-language-model-agents/note-1-getting-started.md)
+- [`mech-interpt/`](mech-interpt/): mechanistic interpretability, small-model reliability, internal world models, representation fine-tuning, and language-agent control.
+- [`LLMs-cogs/`](LLMs-cogs/): language models, cognition, predictive processing, memory, representation learning, and agent behavior.
+- [`statistics-for-ai/`](statistics-for-ai/): statistical inference, uncertainty quantification, evaluation science, preference modeling, alignment limits, watermarking, data mixtures, and evidence discipline for AI/LLMs.
+- [`post-training-and-rl/`](post-training-and-rl/): post-training, reward modeling, preference optimization, RL-style policy improvement, and reward-hacking audits.
+- [`protein-ml/`](protein-ml/): protein, biology, molecular systems, and ML for life science.
+- [`world-models/`](world-models/): simulation, embodied prediction, spatial intelligence, mechanistic interpretability of world models, compositional dynamical systems, and model-based agents.
+- [`diffusion-flows/`](diffusion-flows/): diffusion, flow matching, generative modeling, and continuous transformation systems.
+
+## Active Sprint Index
+
+- **Reference / prototype:** [`Sprint 000: Small World, Big City`](mech-interpt/sprints/000-bigcity-small-world-nyc-gemma/README.md)
+- **Active:** [`Sprint 001: Epistemic Reliability in Small Language Models`](mech-interpt/sprints/001-epistemic-reliability-small-language-models/note-1-getting-started.md)
+- **To be started:** [`Sprint 002: Representation Engineering, ReFT, and Meta-Learning in Small Language Models`](mech-interpt/sprints/002-meta-learning-representation-finetuning-llms/note-1-getting-started.md)
+- **Exploratory direction:** [`Sprint 003: Predictive Coding, Natural Intelligence, and Small Language-Model Agents`](mech-interpt/sprints/003-predictive-coding-small-language-model-agents/note-1-getting-started.md)
+- **Exploratory direction:** [`Statistics for AI Sprint 000: Statistical Foundations for Frontier LLM Reliability`](statistics-for-ai/sprints/000-statistical-foundations-for-frontier-llms/README.md)
+
+## Initiative Index
+
+- [`Mechanistic Interpretability of World Models`](world-models/sprints/001-mechanistic-interpretability-world-models/): latent state spaces, predictive representations, rollout dynamics, activation patching, and causal steering in learned world models.
+- [`Post-Training and RL`](post-training-and-rl/): reward models, preference data, process supervision, RL-style optimization, and reward-hacking audits for small language models.
+- [`Statistics for AI`](statistics-for-ai/): statistical foundations for LLM reliability, alignment, uncertainty, evaluation, watermarking, data mixtures, and frontier safety evidence.
 
 ## Shared Research Craft
 
 - [`Research Sprint Review Checklist`](research-craft/review-checklist.md): reusable technical and research-craft review for every sprint.
+- [`Research Sprint Template`](research-craft/sprint-template.md): reusable sprint scaffold with Marr-level behavioral, representational, and mechanistic/control framing.
+- [`Integrated AI Research Stack`](research-craft/integrated-ai-research-stack.md): shared map connecting representation learning, world models, mechanistic interpretability, steering, post-training, reward modeling, RL, and agents.
+- [`Marr, Control, and Neural Geometry Framework`](mech-interpt/framework-marr-control-neural-geometry.md): shared operating frame for the mechanistic-interpretability sequence.
 
 ## Research Sprint Method
 

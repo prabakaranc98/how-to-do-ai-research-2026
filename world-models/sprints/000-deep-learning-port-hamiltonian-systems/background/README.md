@@ -1,6 +1,6 @@
 # Background Index
 
-**Sprint:** 002 - Deep Learning for Port-Hamiltonian and Compositional Systems
+**Sprint:** World-Models 000 - Deep Learning for Port-Hamiltonian and Compositional Systems
 
 This folder collects the background needed to think clearly before implementing experiments.
 

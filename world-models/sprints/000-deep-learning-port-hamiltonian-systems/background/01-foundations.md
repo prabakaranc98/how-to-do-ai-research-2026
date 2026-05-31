@@ -1,6 +1,6 @@
 # 01 - Foundations
 
-**Sprint:** 002 - Deep Learning for Port-Hamiltonian and Compositional Systems  
+**Sprint:** World-Models 000 - Deep Learning for Port-Hamiltonian and Compositional Systems  
 **Purpose:** Build the first-principles mental model before experiments.
 
 ## 1. Why This Problem Space Matters

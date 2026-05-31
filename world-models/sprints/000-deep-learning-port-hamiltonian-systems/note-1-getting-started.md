@@ -1,6 +1,6 @@
 # Note 1: Getting Started
 
-**Sprint:** 002 - Deep Learning for Port-Hamiltonian and Compositional Systems  
+**Sprint:** World-Models 000 - Deep Learning for Port-Hamiltonian and Compositional Systems  
 **Date:** May 2, 2026  
 **Status:** Framing note
 
@@ -234,7 +234,7 @@ This sprint is:
 
 All artifacts for this sprint should stay under:
 
-`sprints/002-deep-learning-port-hamiltonian-systems/`
+`world-models/sprints/000-deep-learning-port-hamiltonian-systems/`
 
 Planned artifacts:
 
