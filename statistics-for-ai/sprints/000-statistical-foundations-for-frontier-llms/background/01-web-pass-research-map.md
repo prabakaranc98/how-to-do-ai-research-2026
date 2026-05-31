@@ -30,6 +30,20 @@ OpenAI's [Safety Evaluations Hub](https://openai.com/safety/evaluations-hub/) an
 
 Anthropic's ["Responsible Scaling Policy Version 3.0"](https://www.anthropic.com/news/responsible-scaling-policy-v3) is also relevant because it explicitly treats frontier safety as a process of evaluating capabilities and safeguards under incomplete evidence. The important lesson is that labs need better statistical tools for confidence, thresholds, monitoring, and claims about residual risk.
 
+### 4. Cross-Model Knowledge Transfer as Noisy Supervision
+
+Knowledge transfer between models is a statistical problem, not only a compression trick. A teacher model provides labels, logits, rationales, preferences, critiques, or synthetic data. Those signals can reduce variance, but they can also transfer bias, overconfidence, hallucinations, and tail-mode loss.
+
+Useful anchors:
+
+- ["A statistical perspective on distillation"](https://research.google/pubs/a-statistical-perspective-on-distillation/) explains why teacher probability estimates can help and why teacher quality should be judged by probability-estimate quality, not only raw accuracy.
+- ["How Is Uncertainty Propagated in Knowledge Distillation?"](https://arxiv.org/abs/2601.18909) frames distillation as an uncertainty transformation across teacher outputs, student training, and student inference.
+- OpenAI's ["Weak-to-strong generalization"](https://openai.com/index/weak-to-strong-generalization/) studies the reverse problem: using weaker supervisors to elicit stronger models.
+- ["Improving Weak-to-Strong Generalization with Reliability-Aware Alignment"](https://arxiv.org/abs/2406.19032) supports filtering or reweighting weak supervision by estimated reliability.
+- ["How Bad is Training on Synthetic Data?"](https://arxiv.org/abs/2404.05090) shows why recursive synthetic-data training can erase tails of the original distribution.
+
+See [`02-cross-model-knowledge-transfer.md`](02-cross-model-knowledge-transfer.md) for the focused transfer map.
+
 ## Why This Is Essential for Frontier Labs
 
 Frontier labs need statistics because almost every important deployment decision is an inference problem:
@@ -42,6 +56,7 @@ Frontier labs need statistics because almost every important deployment decision
 - whether post-training improved truthfulness or only response style;
 - whether a detector or watermark works at the needed false-positive rate;
 - whether a data mixture caused a capability gain or a safety regression;
+- whether a distilled or synthetic-data-trained model inherited capability or inherited hidden teacher errors;
 - whether a subgroup reliability metric is meaningful or underpowered;
 - whether uncertainty estimates are calibrated enough to drive routing and abstention.
 
@@ -52,6 +67,7 @@ For a data science student, this is a strong research lane because it converts f
 - asymptotic thinking becomes scaling and sample-complexity reasoning;
 - causal inference becomes data-mixture and post-training attribution;
 - uncertainty quantification becomes abstention, routing, and safety thresholds;
+- noisy-label modeling becomes teacher-student transfer, synthetic-data filtering, and weak-supervision alignment;
 - fairness statistics becomes preference diversity and subgroup reliability.
 
 ## First Narrow Sprint Choice
@@ -65,7 +81,7 @@ This creates a reusable artifact that can later connect to:
 - RLHF and reward-model audits;
 - alignment under preference disagreement;
 - model-routing and abstention systems;
+- uncertainty-aware distillation and cross-model knowledge-transfer audits;
 - safety evals with confidence intervals;
 - mechanistic probes for uncertainty and answerability;
 - agent policies for answer/retrieve/abstain/escalate decisions.
-

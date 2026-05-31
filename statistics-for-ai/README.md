@@ -37,7 +37,14 @@ This initiative asks:
 
 Start with [`sprints/000-statistical-foundations-for-frontier-llms/`](sprints/000-statistical-foundations-for-frontier-llms/).
 
+### Cross-Model Knowledge Transfer
+
+This initiative asks:
+
+**When a teacher model transfers knowledge to a student model, what is actually being transferred: capability, calibrated uncertainty, reasoning structure, preference bias, spurious style, or distributional collapse?**
+
+This thread treats distillation, synthetic-data training, weak-to-strong generalization, preference distillation, cross-tokenizer transfer, and heterogeneous feature transport as statistical estimation problems.
+
 ## Sprint Index
 
 - [`Sprint 000: Statistical Foundations for Frontier LLM Reliability`](sprints/000-statistical-foundations-for-frontier-llms/): a first research sprint that maps the field, narrows the statistical surface, and defines a minimal experiment around uncertainty-aware LLM evaluation.
-

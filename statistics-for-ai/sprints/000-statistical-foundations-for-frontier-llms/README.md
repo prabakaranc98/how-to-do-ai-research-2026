@@ -77,6 +77,18 @@ Core questions:
 - How do scaling laws, asymptotics, and sample complexity interact with LLM training and evaluation?
 - When does knowledge transfer from a teacher model improve a student model, and when does it transfer bias or overconfidence?
 
+### Cross-Model Knowledge Transfer
+
+Distillation, synthetic-data training, weak-to-strong supervision, and preference distillation are all cross-model transfer pipelines. Statistically, they are noisy-supervision systems.
+
+Core questions:
+
+- Is the teacher signal a calibrated estimate of the target behavior or only a high-performing black-box labeler?
+- Which teacher outputs should be trusted, filtered, reweighted, or sampled multiple times?
+- Does the student inherit the teacher's uncertainty, or does training collapse uncertainty into confident imitation?
+- Does the transfer preserve rare modes, minority preferences, and tail cases?
+- How should transfer be evaluated under distribution shift, not only in-distribution benchmark accuracy?
+
 ### Bias, Fairness, and Subgroup Reliability
 
 Bias in LLMs should be treated as a distributional and inferential problem, not only a list of bad examples.
@@ -101,6 +113,7 @@ Core questions:
 1. Direct LLM self-confidence will be miscalibrated, but a combined uncertainty score from answer consistency, retrieval agreement, verifier disagreement, and semantic variation will better predict correctness.
 2. Selective prediction can reduce the error rate among answered questions, but the gain will depend strongly on task distribution and calibration-set design.
 3. Preference-style evals will hide disagreement unless they explicitly model annotator heterogeneity or pairwise preference cycles.
+4. Teacher-student transfer will improve small-model average accuracy, but without uncertainty-aware filtering or weighting it will also transfer teacher errors, overconfidence, and tail-mode loss.
 
 ## 6. Minimal Experiment
 
@@ -129,6 +142,9 @@ This sprint is a focused path to develop frontier-relevant statistical taste:
 ## 8. Planned Artifacts
 
 - [`background/01-web-pass-research-map.md`](background/01-web-pass-research-map.md): source-backed research map and frontier-lab relevance.
+- [`background/02-cross-model-knowledge-transfer.md`](background/02-cross-model-knowledge-transfer.md): statistical framing for distillation, weak-to-strong supervision, synthetic data, and transfer reliability.
+- [`background/03-heterogeneous-feature-transport.md`](background/03-heterogeneous-feature-transport.md): targeted transfer from large, differently trained teacher models into smaller students through representation alignment, optimal transport, and uncertainty-weighted distillation.
+- [`background/04-how-to-do-statistical-research-on-llms.md`](background/04-how-to-do-statistical-research-on-llms.md): practical playbook for turning statistics into LLM research questions, experiments, estimands, and evals.
 - `hypothesis.md`: narrowed hypotheses before experiments.
 - `methods.md`: dataset, model, signals, statistics, thresholds, and controls.
 - `evals.md`: metrics, confidence intervals, selective-risk curves, and failure taxonomy.
@@ -138,4 +154,3 @@ This sprint is a focused path to develop frontier-relevant statistical taste:
 ## 9. Sprint-End Decision
 
 Continue only if the first eval harness produces one reusable object: a dataset, scoring script, uncertainty metric, eval card, or failure taxonomy that can be reused in later alignment, RL, or agent-control sprints.
-
